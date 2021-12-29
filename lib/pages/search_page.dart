@@ -7,7 +7,7 @@ import 'package:provider/provider.dart';
 import 'package:tradexa_movie/main.dart';
 import 'detail_page.dart';
 
-String apiKey = 'bbaf2b2f';
+String apiKey = ; // Enter a valid OMDb API Key
 String siteUrl = 'http://www.omdbapi.com/?apikey=$apiKey&';
 Map<String, dynamic> data = {};
 
@@ -88,7 +88,6 @@ Widget SuggestionList(BuildContext context, int index) {
                 Ink.image(
                   image: NetworkImage(
                     data['poster'],
-                    // 'https://m.media-amazon.com/images/M/MV5BMTc5MDE2ODcwNV5BMl5BanBnXkFtZTgwMzI2NzQ2NzM@._V1_SX300.jpg',
                   ),
                   alignment: Alignment(0, -0.55),
                   height: 210,
@@ -187,8 +186,7 @@ class _SearchBarState extends State<SearchBar> {
   TextEditingController _contentSearch = TextEditingController();
 
   Future<void> getData(String userString) async {
-    var url = Uri.parse(
-        'https://www.omdbapi.com/?t=$userString&apikey=$apiKey&plot=long');
+    var url = Uri.parse('${siteUrl}t=${userString}&plot=long');
     try {
       var response = await http.get(url);
       if (response.statusCode == 200) {
