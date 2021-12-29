@@ -1,6 +1,6 @@
-# tradexa_movie
+# Movie Info
 
-Movie Info(Tradexa)
+Movie Info
 
 ## Getting Started
 
