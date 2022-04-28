@@ -33,7 +33,7 @@ class SearchResult extends ChangeNotifier {
   }
 
   void failedSearch() {
-    searched = false;
+    searched =  false;
     notifyListeners();
   }
 }
