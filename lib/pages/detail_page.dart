@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:tradexa_movie/pages/details/general_info.dart';
 import 'package:tradexa_movie/pages/details/ratings.dart';
-
+ 
 import 'details/movie_info.dart';
 
 class DetailPage extends StatelessWidget {
