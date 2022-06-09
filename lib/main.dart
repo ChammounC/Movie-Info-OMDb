@@ -22,7 +22,7 @@ class MyApp extends StatelessWidget {
         child: SearchPage(),
       ),
     );
-  }
+  } 
 }
 
 class SearchResult extends ChangeNotifier {
