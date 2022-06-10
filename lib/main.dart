@@ -31,7 +31,7 @@ class SearchResult extends ChangeNotifier {
     searched = true;
     notifyListeners();
   }
-
+ 
   void failedSearch() {
     searched =  false;
     notifyListeners();
