@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:tradexa_movie/pages/search_page.dart';
- 
+  
 void main() => runApp(MyApp()); 
 
 class MyApp extends StatelessWidget {
