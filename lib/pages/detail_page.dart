@@ -31,7 +31,7 @@ class DetailPage extends StatelessWidget {
                       ],
                       begin: Alignment.bottomCenter,
                       end: Alignment.topCenter,
-                    )),
+                    )), 
                     child: Opacity(
                       opacity: 0.5,
                       child: Image.network(
